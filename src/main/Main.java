@@ -20,7 +20,7 @@ public class Main {
        AreaVenta area1 = new AreaVenta("Area 1");
        AreaVenta area2 = new AreaVenta("Area 2");
        
-       // Fax, Despacho, Nombre, Apellidos, Dni, Direccion, Antiguedad, Telefono, Salario
+       // Despacho, Fax, Nombre, Apellidos, Dni, Direccion, Antiguedad, Telefono, Salario
        Secretario secretario1 = new Secretario(despacho2, "034986475214", "Lolo", "Caballero", "89456123J", "Rua", 3, "986225533", 1000);
        
        // Despacho, AreaVenta, Coche, Nombre, Apellidos, Dni, Direccion, Antiguedad, Telefono, Salario
