@@ -23,6 +23,6 @@ public class Despacho {
     // To String
 
     @Override public String toString() {
-        return "Despacho{ " + " nombre: " + nombre + " }";
+        return nombre;
     }
 }

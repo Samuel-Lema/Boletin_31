@@ -67,7 +67,7 @@ public class XefeZona extends Empregado {
     
     @Override public void imprimir() {
         
-        System.out.println(super.toString());
+        System.out.println(super.toString() + this.toString());
     }
 
     @Override public void cambiarSupervisor(XefeZona jefe) {}
@@ -75,4 +75,12 @@ public class XefeZona extends Empregado {
     @Override public void incrementarSalario() {
         super.setSalario((this.getSalario() * 0.20f) * super.getAñosAntiguedade());
     }
+    
+    // To String
+
+    @Override public String toString() {
+        return ", despacho: " + despacho + ", secretarioAsignado: " + secretarioAsignado.getNombre() + ", areaVenta: " + areaVenta.getNombre() + ", coche: " + coche + '}';
+    }
+    
+    
 }

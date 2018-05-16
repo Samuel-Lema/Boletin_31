@@ -16,7 +16,7 @@ public class Secretario extends Empregado{
     
     @Override public void imprimir() {
         
-        System.out.println(super.toString() + despacho.toString() + ", númeroFax: " + this.numeroFax);
+        System.out.println(super.toString() + this.toString());
     }
 
     @Override public void cambiarSupervisor(XefeZona jefe) {
@@ -27,4 +27,12 @@ public class Secretario extends Empregado{
     @Override public void incrementarSalario() {
         super.setSalario((this.getSalario() * 0.05f) * super.getAñosAntiguedade());
     }
+    
+    // To String
+
+    @Override public String toString() {
+        return ", despacho: " + despacho + ", numeroFax: " + numeroFax;
+    }
+    
+    
 }

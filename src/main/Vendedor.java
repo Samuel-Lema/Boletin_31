@@ -42,7 +42,7 @@ public class Vendedor extends Empregado{
         
     @Override public void imprimir() {
         
-        System.out.println(super.toString() + this.tlfMobil +  ", porcentajeComisión: " + this.porcentaxeComision + "%");
+        System.out.println(super.toString() + this.toString());
     }
 
     @Override public void cambiarSupervisor(XefeZona jefe) {
@@ -53,4 +53,12 @@ public class Vendedor extends Empregado{
     @Override public void incrementarSalario() {
         super.setSalario((this.getSalario() * 0.10f) * super.getAñosAntiguedade());
     }
+    
+    // To String
+
+    @Override public String toString() {
+        return ", Coche: " + this.coche + ", tlfMobil: " + this.tlfMobil + ", porcentaxeComision:" + this.porcentaxeComision + "%";
+    }
+    
+    
 }

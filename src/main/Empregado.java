@@ -96,11 +96,17 @@ public abstract class Empregado {
     
     // To String
 
-    @Override
-    public String toString() {
+    @Override public String toString() {
+        
+        String nombreJefe = "Ninguno";
+        
+        if (jefe != null){
+            nombreJefe = jefe.getNombre();
+        }
+        
         return "Empregado{ " + "nombre: " + nombre + ", apellidos:" + apellidos + ", dni: " + dni + ", direccion: " + 
                 direccion + ", a\u00f1osAntiguedade: " + añosAntiguedade + ", telefono: " + telefono + ", salario:" + 
-                salario + ", jefe:" + jefe;
+                Math.floor(salario) + ", jefe: " + nombreJefe;
     }
     
     

@@ -39,4 +39,12 @@ public class Coche {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+    
+    // To String
+
+    @Override public String toString() {
+        return "{ " + "matricula: " + matricula + ", marca: " + marca + ", modelo: " + modelo + " }";
+    }
+    
+    
 }

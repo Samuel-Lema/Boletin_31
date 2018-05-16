@@ -30,11 +30,20 @@ public class Main {
        Vendedor vendedor1 = new Vendedor(coche2, "655474434", 10,"María","Gil","45612378G","Silo",2,"986475512",954);
        area1.añadirVendedor(vendedor1);
 
+       // Asigno a Xefe de Zona 1 como jefe de secretario1
        xefeZona1.setSecretarioAsignado(secretario1);
        
-       System.out.println(secretario1.toString());
-       System.out.println(xefeZona1.toString());
-       System.out.println(vendedor1.toString());
+       // Muestro todos los empleados
+       secretario1.imprimir();
+       xefeZona1.imprimir();
+       vendedor1.imprimir();
+       
+       // Incremento el salario de XefeZona1 y Vendedor1 y los muestro por pantalla
+       xefeZona1.incrementarSalario();
+       vendedor1.incrementarSalario();
+       
+       xefeZona1.imprimir();
+       vendedor1.imprimir();
     }
     
 }
